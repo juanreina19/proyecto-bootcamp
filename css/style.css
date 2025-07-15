@@ -1,26 +1,27 @@
 /* Formulario con Flexbox */
 .contac form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-input, textarea {
-  padding: 10px;
-  border: 1px solid #005954;
-  border-radius: 5px;
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #005954;
+    border-radius: 5px;
 }
 
 button {
-  background-color: #5dc1b9;
-  color: white;
-  padding: 10px;
-  border: 1px solid #005954;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+    background-color: #5dc1b9;
+    color: white;
+    padding: 10px;
+    border: 1px solid #005954;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
-  background-color: rgb(131, 131, 131);
+    background-color: rgb(131, 131, 131);
 }
