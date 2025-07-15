@@ -1,0 +1,62 @@
+header {
+    background-color: #338b85;
+}
+
+header h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 1px solid white;
+
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #d5ffff;
+    border: 3px solid black;
+}
+
+/* Formulario con Flexbox */
+.contac form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #005954;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #5dc1b9;
+    color: white;
+    padding: 10px;
+    border: 1px solid #005954;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(131, 131, 131);
+}
