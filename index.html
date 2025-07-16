@@ -6,17 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Artesanal</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div class="container">
         <header>
+            <img src="img/icon.png" alt="icon">
+            <h1>Corazón Urbano</h1>
             <nav>
-
+                <a href="#">Inicio</a>
+                <a href="#tienda">Productos</a>
+                <a href="#">Contáctanos</a>
             </nav>
         </header>
         <main>
+            <div class="tienda" id="tienda">
+                <div class="item"><img src="img/img1.jpg" alt="">
+                    <p>Ver producto</p>
+                </div>
+                <div class="item"><img src="img/img2.jpg" alt="">
+                    <p>Ver producto</p>
+                </div>
+                <div class="item"><img src="img/img3.webp" alt="">
+                    <p>Ver producto</p>
+                </div>
+                <div class="item"><img src="img/img4.webp" alt="">
+                    <p>Ver producto</p>
+                </div>
+                <div class="item"><img src="img/img5.jpg" alt="">
+                    <p>Ver producto</p>
+                </div>
+                <div class="item"><img src="img/img6.webp" alt="">
+                    <p>Ver producto</p>
+                </div>
+            </div>
+            <section class="contac">
+                <h2>¡CONTACTANOS!</h2>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required />
 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit" id="enviar">ENVIAR</button>
+                </form>
+                <p id="success"></p>
+                <p id="error"></p>
+                <script src="js/main.js"></script>
+            </section>
         </main>
         <footer>
             <p>&copy; 2025 Juan Reina, Gustavo Lizarazo, Edwin Rodriguez</p>
