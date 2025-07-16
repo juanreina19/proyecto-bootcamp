@@ -66,10 +66,26 @@ main {
     cursor: pointer;
 }
 
+.item img {
+    filter: grayscale(0%);
+}
+
+.item img:hover {
+    filter: grayscale(100%);
+    transform: rotateY(180deg);
+}
+
 /* Estilos nav */
 
 header {
     background-color: #338b85;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
 }
 
 header h1 {
@@ -81,7 +97,8 @@ header h1 {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    flex-grow: 2;
+    justify-content: space-evenly;
     gap: 10px;
     padding: 30px;
 }
@@ -154,4 +171,10 @@ button:hover {
     font-weight: bold;
     padding: 10px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
 }
