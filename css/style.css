@@ -41,6 +41,8 @@ main {
     height: fit-content;
     background-color: #005954;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transfrorm 0.3s, box-shadow 0.3s;
+    aspect-ratio: 1 / 1;
 }
 
 .item img {
@@ -48,6 +50,10 @@ main {
     padding: 5px;
     height: 170px;
     width: 170px;
+}
+
+.item:hover {
+    transform: scale(1.06);
 }
 
 .item p {
@@ -134,4 +140,18 @@ button {
 
 button:hover {
     background-color: rgb(131, 131, 131);
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+#success {
+    color: rgb(15, 184, 0);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
 }
