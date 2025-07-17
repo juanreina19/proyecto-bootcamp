@@ -173,6 +173,13 @@ button:hover {
     text-align: center;
 }
 
+.conta {
+    border: 1px solid gray;
+    background-color: rgb(255, 229, 229);
+    border-radius: 15px;
+    margin: 10px;
+}
+
 @media screen and (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
