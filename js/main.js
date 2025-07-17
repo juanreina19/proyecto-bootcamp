@@ -9,28 +9,26 @@ enviar.addEventListener("click", function (even) {
     const email = document.getElementById("email").value;
     const msg = document.getElementById("mensaje").value;
 
-    const success = document.getElementById("success");
-    const error = document.getElementById("error");
+    const alert = document.getElementById("alert");
 
     if (nombre && email && msg) {
-        const mensaje = `${nombre}, Mensaje enviado con exito!`;
-        success.textContent = mensaje;
+        const mensaje = `
+        <p id="success" class="conta">${nombre}, Mensaje enviado con exito!</p>
+        `;
+        alert.innerHTML = mensaje;
 
         setTimeout(() => {
-            success.textContent = "";
+            alert.innerHTML = "";
         }, 2500)
         form.reset();
     } else {
-        const msg_error = `Llena los campos requeridos`;
-        error.textContent = msg_error;
+        const msg_error = `
+        <p id="error" class="conta">Llena los campos requeridos</p>
+        `;
+        alert.innerHTML = msg_error;
 
         setTimeout(() => {
-            error.textContent = "";
+            alert.innerHTML = "";
         }, 2500)
     }
-
-    console.log(nombre, email, msg);
-
-    // const mensaje = `${nombre}, Mensaje enviado con exito!`;
-    // success.textContent = mensaje;
 })
